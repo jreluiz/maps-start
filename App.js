@@ -3,20 +3,30 @@ import React, {Component} from 'react';
 import { StyleSheet, View } from 'react-native';
 import MapView from "react-native-maps";
 
-
 export default class App extends Component {
+
+  state = {
+    region: {
+      latitude: -22.9064,
+      longitude: -47.0616,
+      latitudeDelta: 0.0922,
+      longitudeDelta: 0.0421,
+    },
+  };
+
+  onRegionChange(region) {
+    this.setState({ region });
+  }
+
   render() {
     return (
-        <View style={styles.container}>
-          <MapView style={styles.map}
-           initialRegion={{
-             latitude: -22.9064,
-             longitude: -47.0616,
-             latitudeDelta: 0.0922,
-             longitudeDelta: 0.0421,
-           }}
-          />
-        </View>
+      <View style={styles.container}>
+        <MapView
+          style={styles.map}
+          region={this.state.region}
+          onRegionChange={(region) => this.onRegionChange(region)}
+        />
+      </View>
     );
   }
 }
