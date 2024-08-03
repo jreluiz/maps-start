@@ -4,7 +4,11 @@ Os exemplos estão divididos em branches com exemplos de utilização da API do 
 
 ### Branches existentes:
 
-#### aula1
+`#### aula1`
 - **Configuração inicial**: Configurando a API KEY do google maps e criando um projeto simples de exemplo.
 
-- **Rotas**: Configurando rotas ...
+`#### aula2`
+- **Usando Rotas**: Utilizando Rotas com a Google Maps API no React Native.
+
+`#### aula3`
+
