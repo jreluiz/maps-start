@@ -1,4 +1,4 @@
-# Este projeto contém exemplos de utilização da API do Google Maps em aplicações React Native
+# Exemplos de utilização da API do Google Maps em aplicações React Native
 
 Os exemplos estão divididos em branches com exemplos de utilização da API do Google Maps em projetos React Native.
 
